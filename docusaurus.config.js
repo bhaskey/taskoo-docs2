@@ -35,8 +35,8 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/doc1',
+              label: 'API Docs',
+              to: 'docs/api/post-task',
             },
             {
               label: 'Second Doc',
