@@ -18,14 +18,14 @@ module.exports = {
           to: 'docs/api/post-task',
           activeBasePath: 'docs',
           label: 'Docs',
-          position: 'left',
+          position: 'right',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
-        {
+        {to: 'blog', label: 'Blog', position: 'right'},
+        /*{
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
           position: 'right',
-        },
+        },*/
       ],
     },
     footer: {

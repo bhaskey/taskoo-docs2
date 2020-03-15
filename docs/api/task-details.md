@@ -6,6 +6,7 @@ sidebar_label: Task Details APIs
 ---
 
 ## Task Details
+
 This API gets all the Task Details including Offers (and their Comments) and Questions (and their replies).
 
 ```json

@@ -11,9 +11,9 @@
   --ifm-color-primary-dark: rgb(108, 99, 255);
   --ifm-color-primary-darker: rgb(76, 69, 178);
   --ifm-color-primary-darkest: rgb(63, 57, 150);
-  --ifm-color-primary-light: rgb(108, 99, 255);
-  --ifm-color-primary-lighter: rgb(76, 69, 178);
-  --ifm-color-primary-lightest: rgb(63, 57, 150);
+  --ifm-color-primary-light: rgb(138, 138, 141);
+  --ifm-color-primary-lighter: rgb(162, 161, 172);
+  --ifm-color-primary-lightest: rgb(217, 217, 221);
   --ifm-code-font-size: 95%;
 }
 
