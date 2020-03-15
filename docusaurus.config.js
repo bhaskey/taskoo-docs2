@@ -8,10 +8,10 @@ module.exports = {
   projectName: 'taskoo-docs2', // Usually your repo name.
   themeConfig: {
     navbar: {
-      // title: 'taskoo docs',
+      title: 'taskoo docs',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/taskoo_icon.svg',
+        src: 'img/logo_book.svg',
       },
       links: [
         {
