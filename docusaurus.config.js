@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'Developer\'s documentation for and by taskoo team.',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/taskoo_fav.svg',
   organizationName: 'taskoo', // Usually your GitHub org/user name.
   projectName: 'taskoo-docs2', // Usually your repo name.
   themeConfig: {
