@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   favicon: 'img/taskoo_fav.svg',
-  organizationName: 'taskoo', // Usually your GitHub org/user name.
+  organizationName: 'bhaskey', // Usually your GitHub org/user name.
   projectName: 'taskoo-docs2', // Usually your repo name.
   themeConfig: {
     navbar: {
@@ -20,7 +20,12 @@ module.exports = {
           label: 'Docs',
           position: 'right',
         },
-        {to: 'blog', label: 'Blog', position: 'right'},
+        {
+          to: 'docs/spec/web/post-task-spec',
+          activeBasePath: 'docs/spec',
+          label: 'Specifications',
+          position: 'right',
+        },
         /*{
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
