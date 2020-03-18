@@ -27,7 +27,22 @@ combining:
 ![image]
 (/img/post-task-spec/3.png)
 
-3. Open **how much?** pop-up. User fills out details as below.
+4. Open **how much?** pop-up. User fills out details as below.
 
 ![image]
 (/img/post-task-spec/4.png)
+
+5. Since user is not logged in, when click **post**, the **login or register** pop-up will open as below. User can either login by google or enter mobile number and click **send otp** button. If user clicks **send otp** button it goes to next step (step 6 below)
+
+![image]
+(/img/post-task-spec/7.png)
+
+6. Verify otp verifies otp from api and call the post task api(POST api call). Open **you are a star**.
+
+![image]
+(/img/post-task-spec/8.png)
+
+7. User can click close icon on any popup, and it open below popup. From here either user can contine where they left or discard the pos task flow.
+
+![image]
+(/img/post-task-spec/6.png)
