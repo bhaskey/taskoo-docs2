@@ -5,12 +5,6 @@ hide_title: true
 sidebar_label: Post task end to end flow
 ---
 
-<!--
-combining:
-- assets
-- markdown features
--->
-
 ## Post task end to end flow
 1. Go to home page, click post task. (Any of the highlighted area)
 
