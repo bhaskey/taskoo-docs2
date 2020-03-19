@@ -24,7 +24,7 @@ __Request examples__
 
 ### Location
 
-User can search in task area text box (it calls google places api in backend and gets the location object). Send the value `vicinity` from the google places as request variable `l`.
+User can search in task area text box (it calls google places api in backend and gets the [location object](api/post-task.md)). Send the value `vicinity` from the google places as request variable `l`.
 
 __Request examples__
 
@@ -61,7 +61,7 @@ __Request examples__
 
 ## Task status filter
 
-See user status values [here](api/task-details.md#constants).
+See Task status' values [here](api/task-details.md#constants).
 
 ![image]
 (/img/filters-spec/status.png)
