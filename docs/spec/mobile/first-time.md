@@ -14,10 +14,14 @@ When user opens the mobile app (android/iOS), following screens are shown.
 ### Actions
 
 1. Call google login api `google_login_api`
-2. Send otp -> checks if 10 digit **mobile number** is entered. If Yes: Call `login_with_otp_api`
-Else: Highlight the Enter mobile number text feild in red.
-3. Verify otp -> checks if 4 digit **otp** is entered. If Yes: Call `verify_otp_api`
-Else: Highlight the Enter mobile number text feild in red.
+2. **Send otp** <br/>
+check if 10 digit **mobile number** is entered.
+   * **Yes**: Call `login_with_otp_api`
+   * **No**: Highlight the Enter mobile number text feild in red.
+3. **Verify otp** <br/>
+check if 4 digit **otp** is entered.
+   * **Yes**: Call `verify_otp_api`
+   * **No**: Highlight the Enter mobile number text feild in red.
 
 ### Response
 
