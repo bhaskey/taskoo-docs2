@@ -11,7 +11,8 @@ module.exports = {
         items: [
           'spec/mobile/first-time',
           'spec/mobile/post-task',
-          'spec/mobile/browse-tasks'
+          'spec/mobile/browse-tasks',
+          'spec/mobile/offer',
         ]
       }
     ],
