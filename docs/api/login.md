@@ -5,6 +5,8 @@ hide_title: true
 sidebar_label: Login API
 ---
 
+## Login with Google
+
 ### Login URL
 
 `api_endpoint/auth/login`
