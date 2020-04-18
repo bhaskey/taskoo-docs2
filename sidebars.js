@@ -1,6 +1,12 @@
 module.exports = {
   someSidebar: {
-    API: ["api/post-task", "api/browse-tasks", "api/task-details", "api/offer", "api/question"],
+    API: ["api/login",
+          "api/post-task", 
+          "api/browse-tasks", 
+          "api/task-details", 
+          "api/offer", 
+          "api/question", 
+          "api/payment-methods"],
     Specifications: [
       'spec/web/post-task-spec',
       'spec/web/filters-flow',
