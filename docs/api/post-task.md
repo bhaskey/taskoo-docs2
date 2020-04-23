@@ -35,8 +35,8 @@ POST request to api_endpoint/tasks
   "files": ["someBase64StringForAFile", "someAnotherBase64StringForAFile"],
   "mustHaves": ["string1", "string2", "string3"],
   "location": {},
-  "dueDate": "01-10-2020",
-  "dueTime": 2,
+  "dueDate": "01-10-2020", // date should be today or future
+  "dueTimeType": 2,
   "budget": {},
   "user": {},
   "category": "laundary services"
