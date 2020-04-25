@@ -45,9 +45,6 @@ GET api_endpoint/tasks/{taskId}?complete=true
     },
     "user":{
       "id":1,
-      "userId":"1000",
-      "phone":"9000000003",
-      "email":"user3@mail.com",
       "name":"user 3",
       "imageUrl":"https://some-image-url-of-the-user"
     },
@@ -59,9 +56,6 @@ GET api_endpoint/tasks/{taskId}?complete=true
       "id":1,
       "user":{
         "id":2,
-        "userId":"1001",
-        "phone":"9000000001",
-        "email":"user1@mail.com",
         "name":"user 1",
         "imageUrl":"https://some-image-url-of-the-user"
       },
@@ -75,9 +69,6 @@ GET api_endpoint/tasks/{taskId}?complete=true
           "offerId":null,
           "user":{
             "id":1,
-            "userId":"1000",
-            "phone":"9000000003",
-            "email":"user3@mail.com",
             "name":"user 3",
             "imageUrl":"https://some-image-url-of-the-user"
           },
@@ -88,21 +79,34 @@ GET api_endpoint/tasks/{taskId}?complete=true
     }
   ],
   "questions":[
-    {
-      "id":2,
-      "parentId":1,
-      "user":{
+    "question" :
+      {
         "id":2,
-        "userId":"1001",
-        "phone":"9000000001",
-        "email":"user1@mail.com",
-        "name":"user 1",
-        "imageUrl":"https://some-image-url-of-the-user"
+        "parentId":1,
+        "user":{
+          "id":2,
+          "name":"user 1",
+          "imageUrl":"https://some-image-url-of-the-user"
+        },
+        "taskId":1,
+        "questionText":"question text goes here this is the question about the task bla bla",
+        "postedAt":"14-03-2020 20:01:05"
       },
-      "taskId":1,
-      "questionText":"question text goes here this is the question about the task bla bla",
-      "postedAt":"14-03-2020 20:01:05"
-    },
+    "responses" : [
+      {
+        "id":2,
+        "parentId":1,
+        "user":{
+          "id":2,
+          "name":"user 1",
+          "imageUrl":"https://some-image-url-of-the-user"
+        },
+        "taskId":1,
+        "questionText":"question text goes here this is the question about the task bla bla",
+        "postedAt":"14-03-2020 20:01:05"
+      },
+      ...
+    ]
     ...
   ]
 }

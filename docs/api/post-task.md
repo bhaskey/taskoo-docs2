@@ -66,10 +66,8 @@ POST request to api_endpoint/tasks
 ```json
 {
   "user":{
-    "email":"user3@mail.com",
-    "phone":"9000000003",
-    "name":"user 3",
-    "userId":1000,
+    "id":1,
+    "name":"John Doe",
     "imageUrl":"https://some-image-url-of-the-user"
   }
 }

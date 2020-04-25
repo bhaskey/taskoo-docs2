@@ -19,12 +19,9 @@ Please call this from mobile app/web app
 ![image]
 (/img/login-api/g-auth.png)
 
-It will open the google login consent page. After successfully logging in, the application return `Authorization` token as request parameter (as picture below).
+It will open the google login consent page. After successfully logging in, the application return `User` object with `token` in body.
 
 Please use this token as `Authorization bearer ` header in all the requests, now on.
-
-![image]
-(/img/login-api/g-suc.png)
 
 
 ## Login with OTP
@@ -40,11 +37,8 @@ api: `api_endpoint/auth/send-otp?phone=1234567890`
 Open screen for enter the OTP. Call __Verify OTP__ when user inputs OTP and press verify OTP button.
 
 api: `api_endpoint/auth/verify-otp?phone=1234567890&otp=1234`
-
+__Please send XCRF token with the request all the time__
 __On success__ the application returns token (as picture below).
 
 Please use this token as `Authorization bearer ` header in all the requests, now on.
-
-![image]
-(/img/login-api/otp-suc.png)
 
