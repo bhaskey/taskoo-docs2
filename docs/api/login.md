@@ -9,16 +9,27 @@ sidebar_label: Login API
 
 ### Login URL
 
-Please call this from mobile app/web app
+When user click **login with google** call this api: 
 
-`api_endpoint/oauth2/authorize/google`
+`GET api_endpoint/oauth2/authorize/google`
 
-It will open the google login consent page. After successfully logging in, the application.
+It will open the google login consent page. After successfully logging in, the application will give below response.
 
 ### Response
 `User` public object with `token` in body.
 
-Please use this token as `Authorization bearer ` header in all the requests, now on. Also store the user data on client.
+```json
+{
+    "user": {
+        "id": 100,
+        "name": "Melon Musk",
+        "imageUrl": "https://image.jpeg"
+    },
+    "token": "eh_blablareallybigstring"
+}
+```
+
+Please use this token as `Authorization bearer xxx` header in all the requests. Also store the user data on client.
 
 
 ## Login with OTP
@@ -38,7 +49,20 @@ api: `GET api_endpoint/auth/verify-otp?phone=1234567890&otp=1234`
 ### Response
 `User` public object with `token` in body.
 
-Please use this token as `Authorization bearer ` header in all the requests, now on. Also store the user data on client.
+
+```json
+{
+    "user": {
+        "id": 100,
+        "name": "Melon Musk",
+        "imageUrl": "https://image.jpeg"
+    },
+    "token": "eh_blablareallybigstring"
+}
+```
+
+
+Please use this token as `Authorization bearer ` header in all the requests. Also store the user data on client.
 
 :::tip NOTICE
 Use csrf token in all POST requests. You can obtain it from the first api call. You can get server csrf token by `_csrf.token`.
