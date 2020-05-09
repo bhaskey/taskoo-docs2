@@ -9,19 +9,16 @@ sidebar_label: Login API
 
 ### Login URL
 
-`api_endpoint/auth/login`
-
-### Google OAuth login URL
 Please call this from mobile app/web app
 
 `api_endpoint/oauth2/authorize/google`
 
-![image]
-(/img/login-api/g-auth.png)
+It will open the google login consent page. After successfully logging in, the application.
 
-It will open the google login consent page. After successfully logging in, the application return `User` object with `token` in body.
+### Response
+`User` public object with `token` in body.
 
-Please use this token as `Authorization bearer ` header in all the requests, now on.
+Please use this token as `Authorization bearer ` header in all the requests, now on. Also store the user data on client.
 
 
 ## Login with OTP
@@ -30,15 +27,24 @@ Please use this token as `Authorization bearer ` header in all the requests, now
 
 Call __Send OTP__ api when user enters phone number and press send otp button.
 
-api: `api_endpoint/auth/send-otp?phone=1234567890`
+api: `GET api_endpoint/auth/send-otp?phone=1234567890`
 
 ### Verify OTP
 
 Open screen for enter the OTP. Call __Verify OTP__ when user inputs OTP and press verify OTP button.
 
-api: `api_endpoint/auth/verify-otp?phone=1234567890&otp=1234`
-__Please send XCRF token with the request all the time__
-__On success__ the application returns token (as picture below).
+api: `GET api_endpoint/auth/verify-otp?phone=1234567890&otp=1234`
 
-Please use this token as `Authorization bearer ` header in all the requests, now on.
+### Response
+`User` public object with `token` in body.
+
+Please use this token as `Authorization bearer ` header in all the requests, now on. Also store the user data on client.
+
+:::tip NOTICE
+Use csrf token in all POST requests. You can obtain it from the first api call. You can get server csrf token by `_csrf.token`.
+:::
+
+:::tip NOTICE
+Verify OTP is on test mode now, so api assumes that the otp is always correct. You can assume you got the otp and put any otp for testing.
+:::
 
